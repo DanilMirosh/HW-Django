@@ -1,5 +1,5 @@
 """
-ASGI config for Bulletin_board project.
+ASGI config for board_ads project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Bulletin_board.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'board_ads.settings')
 
 application = get_asgi_application()
