@@ -5,8 +5,8 @@ from typing import List, Dict, Any
 
 def csv_to_json(csv_file: str) -> str:
     json_list = []
-    with open(csv_file, encoding='utf-8') as csvf:
-        csv_read = csv.DictReader(csvf)
+    with open(csv_file, encoding='utf-8') as f:
+        csv_read = csv.DictReader(f)
 
         for row in csv_read:
             for k, v in row.items():
