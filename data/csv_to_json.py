@@ -19,7 +19,7 @@ def csv_to_json(csv_file: str) -> str:
     return json.dumps(json_list, indent=4, ensure_ascii=False)
 
 
-def create_fixture(input_file: str, output_file: str, model: str) -> None:
+def create_fixtures(input_file: str, output_file: str, model: str) -> None:
     data = []
     json_list: List[Dict[str, Any]] = json.loads(input_file)
     for item in json_list:
